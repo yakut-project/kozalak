@@ -2,6 +2,7 @@
 #### [Current]
 
 #### 
+ * [5e95d93](../../commit/5e95d93) [#21](../../issues/21) cybele add __(Halit Alptekin)__
  * [dadbc22](../../commit/dadbc22) [#9](../../issues/9) Database seed yapıldı. __(Bahadir Mezgil)__
  * [c5c8f19](../../commit/c5c8f19) [#18](../../issues/18) version.txt and changelog added __(gizem)__
  * [4113776](../../commit/4113776) [#15](../../issues/15) Generate custom devise views __(Halit Alptekin)__
