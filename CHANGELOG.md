@@ -2,6 +2,8 @@
 #### [Current]
 
 #### 
+ * [9838a1e](../../commit/9838a1e) [#21](../../issues/21) remove old migration __(Halit Alptekin)__
+ * [5470e1b](../../commit/5470e1b) [#21](../../issues/21) add teacher model __(Halit Alptekin)__
  * [93b79ec](../../commit/93b79ec) [#21](../../issues/21) readme rdoc remove __(Halit Alptekin)__
  * [462e693](../../commit/462e693) [#21](../../issues/21) new teacher model __(Halit Alptekin)__
  * [5e95d93](../../commit/5e95d93) [#21](../../issues/21) cybele add __(Halit Alptekin)__
