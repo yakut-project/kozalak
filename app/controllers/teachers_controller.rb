@@ -1,6 +1,6 @@
 class TeachersController < ApplicationController
   before_action :set_teacher, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_teacher!, only: [:show,:index]
+  before_action :authenticate_teacher!
   # GET /teachers
   # GET /teachers.json
   def index
