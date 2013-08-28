@@ -1,6 +1,7 @@
 
 #### [Current]
-
+ * [bb72109](../../commit/bb72109) [#21](../../issues/21) old views __(Halit Alptekin)__
+ * [aa3ff62](../../commit/aa3ff62) Update README.md __(gizemiskender)__
 
 #### 0.1.2
  * [0902682](../../commit/0902682) version bump __(Halit Alptekin)__
