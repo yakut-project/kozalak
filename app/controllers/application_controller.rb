@@ -16,8 +16,6 @@ class ApplicationController < ActionController::Base
     Time.zone = current_user.time_zone if user_signed_in? && current_user.time_zone.present?
   end
 
-
-
   layout :layouter
 
   def layouter
@@ -30,11 +28,8 @@ class ApplicationController < ActionController::Base
   def after_sign_in_path_for(resource)
     case resource
       when User then users_welcome_path
-
       when Admin then hq_dashboard_index_path
-
       when Teacher then teachers_welcome_path
           end
     end
-
   end
