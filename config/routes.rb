@@ -5,6 +5,8 @@ Kozalak::Application.routes.draw do
                           confirmation: 'verification'}
   devise_for :users
   root to: 'welcome#index'
+  get 'users/welcome' => 'welcome#users'
+  get 'teachers/welcome' => 'welcome#teachers'
   namespace :hq do
       resources :dashboard, only: [:index]
   end
