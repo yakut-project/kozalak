@@ -2,6 +2,11 @@
 #### [Current]
 
 #### 
+ * [93b79ec](../../commit/93b79ec) [#21](../../issues/21) readme rdoc remove __(Halit Alptekin)__
+ * [462e693](../../commit/462e693) [#21](../../issues/21) new teacher model __(Halit Alptekin)__
+ * [5e95d93](../../commit/5e95d93) [#21](../../issues/21) cybele add __(Halit Alptekin)__
+ * [dadbc22](../../commit/dadbc22) [#9](../../issues/9) Database seed yapıldı. __(Bahadir Mezgil)__
+ * [c5c8f19](../../commit/c5c8f19) [#18](../../issues/18) version.txt and changelog added __(gizem)__
  * [4113776](../../commit/4113776) [#15](../../issues/15) Generate custom devise views __(Halit Alptekin)__
  * [a5eabab](../../commit/a5eabab) [#4](../../issues/4) auth problem fix __(Halit Alptekin)__
  * [a21c323](../../commit/a21c323) [#4](../../issues/4) login, log out layout __(Halit Alptekin)__
