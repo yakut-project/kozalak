@@ -1,0 +1,13 @@
+<% if current_user %>
+    <li><%= link_to('Cikis yap', destroy_user_session_path, :method => :delete) %></li>
+<% elsif current_teacher %>
+    <li><%= link_to('Cikis yap', destroy_teacher_session_path, :method => :delete) %></li>
+<% elsif current_admin %>
+    <li><%= link_to('Cikis yap', destroy_admin_session_path, :method => :delete) %></li>
+<% else %>
+    <li>
+      <%= link_to('Admin Giris', new_admin_session_path) %>
+      <%= link_to('Teacher Giris', new_teacher_session_path) %>
+      <%= link_to('User Giris', new_user_session_path) %>
+    </li>
+<% end %>
