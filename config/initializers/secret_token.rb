@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Kozalak::Application.config.secret_key_base = '99d5eb9a2ab73191b5b32c7b0b88e159199e56fafc558e7c35d36451b9ca0dda6933c524bf0eeee8e39c73f409a4a60f68872595f34e3fe1fa6d5f33f7e63515'
+Kozalak::Application.config.secret_key_base = '93fca4e69e242670b7ada4f689379885d89edb56870b62021784ada681da5d038188bf61757cc9e1bfac19fd01bbc324f7ae609fedc430bd3fdc61e6ee3dcf97'
