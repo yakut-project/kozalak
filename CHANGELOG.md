@@ -1,5 +1,10 @@
 
 #### [Current]
+ * [9eab24d](../../commit/9eab24d) [#6](../../issues/6) [#7](../../issues/7) [#8](../../issues/8) initial layouts __(Halit Alptekin)__
+ * [c2df3b9](../../commit/c2df3b9) [#6](../../issues/6) [#7](../../issues/7) [#8](../../issues/8) initial layouts __(Halit Alptekin)__
+ * [0915532](../../commit/0915532) [#21](../../issues/21) Cybele database seed uyarlandı. __(Bahadir Mezgil)__
+ * [e863e7a](../../commit/e863e7a) update changelog __(Halit Alptekin)__
+ * [d039022](../../commit/d039022) [#21](../../issues/21) old views remove __(Halit Alptekin)__
  * [bb72109](../../commit/bb72109) [#21](../../issues/21) old views __(Halit Alptekin)__
  * [aa3ff62](../../commit/aa3ff62) Update README.md __(gizemiskender)__
 
