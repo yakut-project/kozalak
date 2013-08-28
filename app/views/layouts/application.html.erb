@@ -7,14 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<<<<<<< HEAD
 <div id="admin_nav">
-  <% if admin_signed_in? %>
-      Signed in as <%= current_admin.email %>. This cannot be cheese?
-      <%= link_to 'Sign out', destroy_admin_session_path, :method => :delete %>
-
-
-  <% end %>
+  <div id="user_nav">
+    <% if user_signed_in? %>
+        Signed in as <%= current_user.email %>. This cannot be cheese?
+        <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+    <% else %>
+        <%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %>
+    <% end %>
+  </div>
 </div>
 
 <%= yield %>
