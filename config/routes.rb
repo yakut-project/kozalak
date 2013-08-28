@@ -1,18 +1,19 @@
 Kozalak::Application.routes.draw do
-  devise_for :admins
   devise_for :teachers
+  devise_for :admins, controllers: {sessions: 'hq/sessions'}, path: 'hq',
+             path_names: {sign_in: 'login', sign_out: 'logout', password: 'secret',
+                          confirmation: 'verification'}
   devise_for :users
-  resources :users
-
-  resources :teachers
-
-  resources :admins
+  root to: 'welcome#index'
+  namespace :hq do
+      resources :dashboard, only: [:index]
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'homepage#index'
+  # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
