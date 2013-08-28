@@ -1,0 +1,10 @@
+.jumbotron
+  %h1 Welcome to teacher!!!!
+  - if current_teacher
+    = link_to 'Sign out', destroy_teacher_session_path, class: 'btn btn-large', method: :delete
+    .row-fluid.marketing
+      %p
+        %strong Email:
+        = current_teacher.email
+  - else
+    = link_to 'Sign in', new_teacher_session_path, class: 'btn btn-large'

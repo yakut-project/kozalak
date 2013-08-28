@@ -18,20 +18,16 @@ class ApplicationController < ActionController::Base
 
 
 
-  def devise_parameter_sanitizer
-    if resource_class == User
-      User::ParameterSanitizer.new(User, :user, params)
-    else
-      super # Use the default one
+
+  def after_sign_in_path_for(resource)
+    case resource
+      when User then users_welcome_path
+
+      when Admin then hq_dashboard_index_path
+
+      when Teacher then teachers_welcome_path
+          end
     end
-  end
 
 
-  def after_sign_in_path_for(resource_or_scope)
-    if current_user
-      super
-    else
-      hq_dashboard_index_path
-    end
   end
-end
