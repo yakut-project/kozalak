@@ -1,28 +1,19 @@
-== README
+Ruby On Rails OSS Project
+=========================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###MEMBERS
 
-Things you may want to cover:
+* Halit Alptekin 
 
-* Ruby version
+* Arman Kara 
 
-* System dependencies
+* Hüseyin Yaşar 
 
-* Configuration
+* Bilgehan Varlı
 
-* Database creation
+* Bahadır Mezgil  
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Gizem İskenderoglu 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
