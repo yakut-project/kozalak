@@ -2,6 +2,8 @@
 #### [Current]
 
 #### 
+ * [93b79ec](../../commit/93b79ec) [#21](../../issues/21) readme rdoc remove __(Halit Alptekin)__
+ * [462e693](../../commit/462e693) [#21](../../issues/21) new teacher model __(Halit Alptekin)__
  * [5e95d93](../../commit/5e95d93) [#21](../../issues/21) cybele add __(Halit Alptekin)__
  * [dadbc22](../../commit/dadbc22) [#9](../../issues/9) Database seed yapıldı. __(Bahadir Mezgil)__
  * [c5c8f19](../../commit/c5c8f19) [#18](../../issues/18) version.txt and changelog added __(gizem)__
