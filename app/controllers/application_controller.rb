@@ -18,6 +18,14 @@ class ApplicationController < ActionController::Base
 
 
 
+  layout :layouter
+
+  def layouter
+    l = 'application'
+    l = 'users' if user_signed_in?
+    l = 'teachers' if teacher_signed_in?
+    l
+  end
 
   def after_sign_in_path_for(resource)
     case resource
@@ -28,6 +36,5 @@ class ApplicationController < ActionController::Base
       when Teacher then teachers_welcome_path
           end
     end
-
 
   end
