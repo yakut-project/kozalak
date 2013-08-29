@@ -6,5 +6,29 @@
       %p
         %strong Email:
         = current_teacher.email
+      %table.table
+        %thead
+          %tr
+            %th #
+            %th First Name
+            %th Last Name
+            %th Username
+            %th.actions
+              Actions
+
+        %tbody
+          - @users.each do |user|
+            %tr.success
+              %td= user.id
+              %td= user.first_name
+              %td= user.last_name
+              %td= user.website
+              %td.action
+                %a.btn.btn-success{href: '#', data: {toggle: 'tooltip'}, title: 'Zoom'}
+                  %i.icon-zoom-in
+                %a.btn.btn-info{href: '#'}
+                  %i.icon-edit
+                %a.btn.btn-danger{href: '#'}
+                  %i.icon-trash
   - else
     = link_to 'Sign in', new_teacher_session_path, class: 'btn btn-large'
