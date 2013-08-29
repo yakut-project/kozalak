@@ -4,8 +4,11 @@
     = link_to 'Sign out', destroy_user_session_path, class: 'btn btn-large', method: :delete
     .row-fluid.marketing
       %p
-        %strong Name:
-        = current_user.name
+        %strong First Name:
+        = current_user.first_name
+      %p
+        %strong Last Name:
+        = current_user.last_name
       %p
         %strong Email:
         = current_user.email

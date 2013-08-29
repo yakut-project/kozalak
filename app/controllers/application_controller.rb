@@ -1,9 +1,10 @@
 require 'application_responder'
-
 class ApplicationController < ActionController::Base
   before_filter :set_user_time_zone
 
+  def handle_unverified_request
 
+  end
   self.responder = ApplicationResponder
   respond_to :html, :json
   WillPaginate.per_page = 10
