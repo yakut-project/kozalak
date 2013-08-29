@@ -1,5 +1,6 @@
 
 #### [Current]
+ * [c85a349](../../commit/c85a349) [#27](../../issues/27) fixed new user attributes __(Bilgehan Varli)__
  * [9bb63c1](../../commit/9bb63c1) [#28](../../issues/28) 0.3.0 Database Seed __(Bahadir Mezgil)__
  * [5aacf23](../../commit/5aacf23) [#26](../../issues/26) hierapolis panel __(Halit Alptekin)__
  * [45ab488](../../commit/45ab488) change routes admin __(gizem)__
