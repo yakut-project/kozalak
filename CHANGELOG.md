@@ -1,5 +1,11 @@
 
 #### [Current]
+ * [ad0f340](../../commit/ad0f340) [#9](../../issues/9) little change spaces __(Halit Alptekin)__
+ * [1b4804d](../../commit/1b4804d) [#9](../../issues/9) string convert to symbol __(Halit Alptekin)__
+ * [e99dfac](../../commit/e99dfac) [#9](../../issues/9) add database seed for new models __(Halit Alptekin)__
+ * [8ac90be](../../commit/8ac90be) [#27](../../issues/27) new user attributes added to model __(Bilgehan Varli)__
+ * [9d467b4](../../commit/9d467b4) [#24](../../issues/24) change adminn route __(gizem)__
+ * [90888b3](../../commit/90888b3) Add CHANGELOG.md to gitignore __(huseyinyasar)__
  * [06c580e](../../commit/06c580e) [#25](../../issues/25) Home and Routes buttons removed. __(Bilgehan Varli)__
  * [40c98f5](../../commit/40c98f5) update changelog __(Halit Alptekin)__
  * [743fb72](../../commit/743fb72) Merge remote-tracking branch 'origin/develop' into develop __(Halit Alptekin)__
