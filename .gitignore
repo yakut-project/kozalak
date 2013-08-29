@@ -26,6 +26,9 @@ vendor/bundler_gems
 # Ignore ide and text editor
 .idea
 
+# Ignore file added by cybele every time.
+CHANGELOG.md
+
 # Ignore pow files
 .powrc
 

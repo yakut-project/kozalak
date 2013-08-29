@@ -14,16 +14,20 @@
  * [d039022](../../commit/d039022) [#21](../../issues/21) old views remove __(Halit Alptekin)__
  * [bb72109](../../commit/bb72109) [#21](../../issues/21) old views __(Halit Alptekin)__
  * [aa3ff62](../../commit/aa3ff62) Update README.md __(gizemiskender)__
+
+#### 0.1.2
  * [0902682](../../commit/0902682) version bump __(Halit Alptekin)__
  * [001f5e2](../../commit/001f5e2) new file __(Halit Alptekin)__
+ * [d0a95c9](../../commit/d0a95c9) [#19](../../issues/19) Fix Render __(Arman Kara)__
+ * [ed16b08](../../commit/ed16b08) [#19](../../issues/19) Create header,footer,navmenu,navbar __(Arman Kara)__
+ * [9785b1f](../../commit/9785b1f) [#19](../../issues/19) Create header,footer,navmenu,navbar __(Arman Kara)__
+
+#### 0.1.1
  * [9838a1e](../../commit/9838a1e) [#21](../../issues/21) remove old migration __(Halit Alptekin)__
  * [5470e1b](../../commit/5470e1b) [#21](../../issues/21) add teacher model __(Halit Alptekin)__
  * [93b79ec](../../commit/93b79ec) [#21](../../issues/21) readme rdoc remove __(Halit Alptekin)__
  * [462e693](../../commit/462e693) [#21](../../issues/21) new teacher model __(Halit Alptekin)__
  * [5e95d93](../../commit/5e95d93) [#21](../../issues/21) cybele add __(Halit Alptekin)__
- * [d0a95c9](../../commit/d0a95c9) [#19](../../issues/19) Fix Render __(Arman Kara)__
- * [ed16b08](../../commit/ed16b08) [#19](../../issues/19) Create header,footer,navmenu,navbar __(Arman Kara)__
- * [9785b1f](../../commit/9785b1f) [#19](../../issues/19) Create header,footer,navmenu,navbar __(Arman Kara)__
 
 #### 0.1.0
  * [b9fdfda](../../commit/b9fdfda) version bump __(Halit Alptekin)__
