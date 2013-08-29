@@ -1,6 +1,7 @@
 require 'application_responder'
 class ApplicationController < ActionController::Base
   before_filter :set_user_time_zone
+  before_filter :configure_permitted_parameters, if: :devise_controller?
 
   def handle_unverified_request
 
@@ -15,6 +16,12 @@ class ApplicationController < ActionController::Base
   protected
   def set_user_time_zone
     Time.zone = current_user.time_zone if user_signed_in? && current_user.time_zone.present?
+  end
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:username, :email) }
+    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:first_name, :last_name, :email,
+                                                            :password, :password_confirmation) }
   end
 
   layout :layouter
