@@ -5,7 +5,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  attr_accessor :website,:github_account, :first_name,:last_name,:birthdate,:gender,:stackoverflow_account,
+  attr_accessor :website,:github_account, :first_name,:last_name,:birthdate,
+                :gender,:stackoverflow_account,
                 :bitbucket_account,:blog_address,:twitter_account,:bio
 
   #TODO commented out til db seed fix
