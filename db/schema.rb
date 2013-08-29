@@ -50,6 +50,17 @@ ActiveRecord::Schema.define(version: 20130828125858) do
   add_index "teachers", ["reset_password_token"], name: "index_teachers_on_reset_password_token", unique: true
 
   create_table "users", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.date     "birthdate"
+    t.string   "website"
+    t.string   "github_account"
+    t.string   "gender"
+    t.string   "stackoverflow_account"
+    t.string   "bitbucket_account"
+    t.string   "blog_address"
+    t.string   "twitter_account"
+    t.text     "bio"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -60,7 +71,6 @@ ActiveRecord::Schema.define(version: 20130828125858) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "time_zone"
