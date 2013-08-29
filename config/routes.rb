@@ -1,6 +1,6 @@
 Kozalak::Application.routes.draw do
   devise_for :teachers
-  devise_for :admins, controllers: {sessions: 'hq/sessions'}, path: 'hq',
+  devise_for :admins, controllers: {sessions: 'hq/sessions'}, path: 'admin',
              path_names: {sign_in: 'login', sign_out: 'logout', password: 'secret',
                           confirmation: 'verification'}
   devise_for :users

@@ -1,5 +1,6 @@
 
 #### [Current]
+ * [06c580e](../../commit/06c580e) [#25](../../issues/25) Home and Routes buttons removed. __(Bilgehan Varli)__
  * [40c98f5](../../commit/40c98f5) update changelog __(Halit Alptekin)__
  * [743fb72](../../commit/743fb72) Merge remote-tracking branch 'origin/develop' into develop __(Halit Alptekin)__
  * [6aea5f8](../../commit/6aea5f8) [#6](../../issues/6) [#7](../../issues/7) [#8](../../issues/8) little refactoring __(Halit Alptekin)__
