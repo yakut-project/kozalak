@@ -4,11 +4,11 @@ class Hq::DashboardController < Hq::BaseController
   end
 
   def teachers
-
+    @teachers = Teacher.all
   end
 
   def users
-
+    @users = User.all
   end
 
   def profile

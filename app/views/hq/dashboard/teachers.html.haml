@@ -1,0 +1,8 @@
+%table.table
+  %thead
+    %tr
+      %th Email
+  %tbody
+    - @teachers.each do |teacher|
+      %tr
+        %td= teacher.email
