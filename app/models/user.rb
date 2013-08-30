@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  acts_as_commentable
+
   def gender_txt
     ['Not Telling', 'Male', 'Female'][self.gender - 1]
   end

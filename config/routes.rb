@@ -4,8 +4,9 @@ Kozalak::Application.routes.draw do
              path_names: {sign_in: 'login', sign_out: 'logout', password: 'secret',
                           confirmation: 'verification'}
   devise_for :users
+  resources :users
   root to: 'welcome#index'
-  get 'users/welcome' => 'welcome#users'
+  get 'user/welcome' => 'welcome#users'
   get 'teachers/welcome' => 'welcome#teachers'
   namespace :hq do
       resources :dashboard, only: [:index] do
