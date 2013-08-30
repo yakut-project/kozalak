@@ -1,17 +1,19 @@
-.jumbotron
-  %h1 Welcome to Kozalak
-  - if current_user
-    = link_to 'Sign out', destroy_user_session_path, class: 'btn btn-large', method: :delete
-    = link_to 'Edit Profile',  edit_user_registration_path, class: 'btn btn-large'
-    .row-fluid.marketing
-      %p
-        %strong Name:
-        = current_user.first_name
-      %p
-        %strong Email:
-        = current_user.email
-  - else
-    = link_to 'Sign up today', new_user_registration_path, class: 'btn btn-large btn-success'
-    = link_to 'User Sign in', new_user_session_path, class: 'btn btn-large'
-    = link_to 'Teacher Sign in', new_teacher_session_path, class: 'btn btn-large'
-
+.row
+  .col-lg-12
+    .brand.text-center
+      %h1
+        .logo-icon
+          %i.icon-group
+        Kozalak
+.row
+  .col-lg-12
+    %form
+      %fieldset.text-center
+        %legend
+        = link_to 'Sign up today', new_user_registration_path, class: 'btn btn-large btn-success'
+      %fieldset.text-center
+        %br/
+        = link_to 'User Sign in', new_user_session_path, class: 'btn btn-large btn-success'
+      %fieldset.text-center
+        %br/
+        = link_to 'Teacher Sign in', new_teacher_session_path, class: 'btn btn-large btn-success'

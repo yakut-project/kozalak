@@ -1,4 +1,11 @@
-%h2 Sign up
+.row
+  .col-lg-12
+    .brand.text-center
+      %h1
+        .logo-icon
+          %i.icon-group
+        Kozalak
+
 = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
   = f.error_notification
   .form-inputs
@@ -9,5 +16,5 @@
     = f.input :password, :required => true
     = f.input :password_confirmation, :required => true
   .form-actions
-    = f.button :submit, "Sign up"
+    = f.button :submit, "Sign up", class: 'btn btn-default btn-large btn-block btn-success'
 = render "devise/shared/links"

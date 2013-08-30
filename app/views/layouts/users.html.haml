@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title kozalak | user
+    %title Kozalak | user
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
@@ -9,8 +9,9 @@
     .container-narrow
       .masthead
         %h3.muted= link_to "kozalak", root_path
+
       %hr/
       = yield
       %hr/
       .footer
-        %p © Company 2013
+        %p © Kozalak 2013
