@@ -3,25 +3,6 @@
     %i.icon-beer
     Kozalak Admin Panel
   %ul.nav.navbar-nav.pull-right
-    %li.dropdown
-      %a.dropdown-toggle{data: {toggle: 'dropdown'}, :href => '#'}
-        %i.icon-envelope
-        Messages
-        %span.badge 5
-        %b.caret
-      %ul.dropdown-menu
-        %li
-          %a{:href => '#'} New message
-        %li
-          %a{:href => '#'} Inbox
-        %li
-          %a{:href => '#'} Out box
-        %li
-          %a{:href => '#'} Trash
-    %li
-      %a{href: '#'}
-        %i.icon-cog
-        Settings
     %li.dropdown.user
       %a.dropdown-toggle{'data-toggle' => 'dropdown', :href => '#'}
         %i.icon-user
@@ -30,7 +11,7 @@
         %b.caret
       %ul.dropdown-menu
         %li
-          %a{:href => '#'} Edit Profile
+          %a{:href => profile_hq_dashboard_index_path} Edit Profile
         %li.divider
         %li
-          =link_to 'Sign out', 'index.html'
+          =link_to 'Sign out', destroy_admin_session_path
