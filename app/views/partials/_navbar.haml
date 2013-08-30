@@ -1,7 +1,7 @@
 #navbar.navbar
   %a.navbar-brand{:href => '#'}
     %i.icon-beer
-    Hierapolis
+    Kozalak
   %ul.nav.navbar-nav.pull-right
     %li.dropdown
       %a.dropdown-toggle{data: {toggle: 'dropdown'}, :href => '#'}
@@ -25,11 +25,11 @@
     %li.dropdown.user
       %a.dropdown-toggle{'data-toggle' => 'dropdown', :href => '#'}
         %i.icon-user
-        %strong John DOE
+        %strong Arman Kara
         %b.caret
       %ul.dropdown-menu
         %li
           %a{:href => '#'} Edit Profile
         %li.divider
         %li
-          =link_to 'Sign out', 'index.html'
+          =link_to 'Sign out', destroy_admin_session_path

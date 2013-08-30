@@ -1,5 +1,5 @@
 .jumbotron
-  %h1 Welcome to kozalak
+  %h1 Welcome to Kozalak
   - if current_user
     = link_to 'Sign out', destroy_user_session_path, class: 'btn btn-large', method: :delete
     .row-fluid.marketing
@@ -11,4 +11,6 @@
         = current_user.email
   - else
     = link_to 'Sign up today', new_user_registration_path, class: 'btn btn-large btn-success'
-    = link_to 'Sign in', new_user_session_path, class: 'btn btn-large'
+    = link_to 'User Sign in', new_user_session_path, class: 'btn btn-large'
+    = link_to 'Teacher Sign in', new_teacher_session_path, class: 'btn btn-large'
+
