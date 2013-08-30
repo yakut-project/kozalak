@@ -31,7 +31,7 @@
           .forms-inputs
             = f.input :birthdate, :value => Date.today
             = f.input :github_account
-            = f.input :gender
+            = f.select :gender, { "Male" => '2', "Female" => '3' }
             = f.input :stackoverflow_account
             = f.input :bitbucket_account
             = f.input :blog_address

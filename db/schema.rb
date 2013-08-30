@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20130828125858) do
     t.date     "birthdate"
     t.string   "website"
     t.string   "github_account"
-    t.string   "gender"
+    t.integer  "gender",                 default: 1
     t.string   "stackoverflow_account"
     t.string   "bitbucket_account"
     t.string   "blog_address"

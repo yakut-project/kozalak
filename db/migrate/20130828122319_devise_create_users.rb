@@ -8,7 +8,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.date   :birthdate
       t.string :website
       t.string :github_account
-      t.string :gender
+      t.integer :gender, :default => 1
       t.string :stackoverflow_account
       t.string :bitbucket_account
       t.string :blog_address

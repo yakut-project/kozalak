@@ -5,6 +5,10 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  def gender_txt
+    ['Not Telling', 'Male', 'Female'][self.gender - 1]
+  end
+
   #TODO commented out til db seed fix
   #validates :first_name, presence: true
   #validates :last_name, presence: true

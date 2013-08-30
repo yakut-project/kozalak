@@ -9,7 +9,7 @@ end
 30.times do |i|
   User.new( :first_name => "user_first_name#{i}",
             :last_name => "user_last_name#{i}",
-            :gender => "user_gender#{i}",
+            :gender => "2",
             :website => "http://username#{i}.com",
             :github_account => "user_github#{i}",
             :stackoverflow_account => "user_stackoverflow#{i}",
