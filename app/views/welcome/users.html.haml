@@ -1,47 +1,53 @@
-.jumbotron
-  %h1   Welcome to user!!
-  - if current_user
-    = link_to 'Sign out', destroy_user_session_path, class: 'btn btn-large', method: :delete
-    = link_to 'Edit Profile',  edit_user_registration_path, class: 'btn btn-large'
-    .row-fluid.marketing
-      %p
-        %strong First Name:
-        = current_user.first_name
-      %p
-        %strong Last Name:
-        = current_user.last_name
-      %p
-        %strong Gender:
-        =current_user.gender
-      %p
-        %strong Birthdate:
-        =current_user.birthdate
-      %p
-        %strong Email:
-        = current_user.email
-      %p
-        %strong Website:
-        = current_user.website
-      %p
-        %strong Blog:
-        = current_user.blog_address
-      %p
-        %strong Github:
-        = current_user.github_account
-      %p
-        %strong Bitbucket:
-        = current_user.bitbucket_account
-      %p
-        %strong Stackoverflow:
-        = current_user.stackoverflow_account
-      %p
-        %strong Twitter:
-        = current_user.twitter_account
-      %p
-        %strong Bio:
-        = current_user.bio
+.row
+  .col-lg-12
+    .brand.text-center
+      %h1
+        .logo-icon
+          %i.icon-user
+        User
+- if current_user
+  .row-fluid.marketing
+    %p
+      %strong First Name:
+      = current_user.first_name
+    %p
+      %strong Last Name:
+      = current_user.last_name
+    %p
+      %strong Gender:
+      =current_user.gender
+    %p
+      %strong Birthdate:
+      =current_user.birthdate
+    %p
+      %strong Email:
+      = current_user.email
+    %p
+      %strong Website:
+      = current_user.website
+    %p
+      %strong Blog:
+      = current_user.blog_address
+    %p
+      %strong Github:
+      = current_user.github_account
+    %p
+      %strong Bitbucket:
+      = current_user.bitbucket_account
+    %p
+      %strong Stackoverflow:
+      = current_user.stackoverflow_account
+    %p
+      %strong Twitter:
+      = current_user.twitter_account
+    %p
+      %strong Bio:
+      = current_user.bio
 
+    = link_to 'Edit Profile',  edit_user_registration_path, class: 'btn btn-block btn-large btn-success'
+    %br
+    = link_to 'Sign out', destroy_user_session_path, class: 'btn btn-block btn-success', method: :delete
 
-  - else
-    = link_to 'Sign up today', new_user_registration_path, class: 'btn btn-large btn-success'
-    = link_to 'Sign in', new_user_session_path, class: 'btn btn-large'
+- else
+  = link_to 'Sign up today', new_user_registration_path, class: 'btn btn-large btn-success'
+  = link_to 'Sign in', new_user_session_path, class: 'btn btn-large'
