@@ -8,21 +8,41 @@
 
 = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
   = f.error_notification
-  .form-inputs
-    = f.input :first_name, :autofocus => true
-    = f.input :last_name, :required => true
-    = f.input :email, :required => true
-    = f.input :password, :required => true
-    = f.input :password_confirmation, :required => true
-    = f.text_field :birthdate, :id => 'datepicker', :value => Date.today
-    = f.input :github_account
-    = f.input :gender
-    = f.input :stackoverflow_account
-    = f.input :bitbucket_account
-    = f.input :blog_address
-    = f.input :twitter_account
-    = f.input :bio
-    = f.input :website
+  #accordion2.accordion
+    .accordion-group
+      .accordion-heading
+        %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseOne"}
+          Required Fields
+      #collapseOne.accordion-body.collapse.in
+        .accordion-inner
+          .form-inputs
+            = f.input :first_name, :autofocus => true
+            = f.input :last_name, :required => true
+            = f.input :email, :required => true
+            = f.input :password, :required => true
+            = f.input :password_confirmation, :required => true
+    .accordion-group
+      .accordion-heading
+        %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseTwo"}
+          Profile Fields
+      #collapseTwo.accordion-body.collapse
+        .accordion-inner
+          .forms-inputs
+            = f.text_field :birthdate, :id => "datepicker", :value => Date.today
+            = f.input :github_account
+            = f.input :gender
+            = f.input :stackoverflow_account
+            = f.input :bitbucket_account
+            = f.input :blog_address
+            = f.input :twitter_account
+            = f.input :website
+    .accordion-group
+      .accordion-heading
+        %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseThree"}
+          Biography
+      #collapseThree.accordion-body.collapse
+        .accordion-inner
+          = f.input :bio
 
   .form-actions
     = f.button :submit, "Sign up", class: 'btn btn-default btn-large btn-block btn-success'
