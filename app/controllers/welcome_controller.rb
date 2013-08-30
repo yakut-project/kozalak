@@ -8,6 +8,5 @@ class WelcomeController < ApplicationController
 
   def teachers
     @users= User.all
-
   end
 end

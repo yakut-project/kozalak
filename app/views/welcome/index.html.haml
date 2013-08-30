@@ -2,6 +2,7 @@
   %h1 Welcome to Kozalak
   - if current_user
     = link_to 'Sign out', destroy_user_session_path, class: 'btn btn-large', method: :delete
+    = link_to 'Edit Profile',  edit_user_registration_path, class: 'btn btn-large'
     .row-fluid.marketing
       %p
         %strong Name:
