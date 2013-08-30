@@ -10,7 +10,7 @@
         %b.caret
       %ul.dropdown-menu
         %li
-          %a{:href => '#'} Edit Profile
+          =link_to 'Change password',  edit_teacher_password_path
         %li.divider
         %li
           =link_to 'Sign out', destroy_teacher_session_path
