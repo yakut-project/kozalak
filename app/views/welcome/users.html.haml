@@ -1,5 +1,5 @@
 .jumbotron
-  %h1 Welcome to user!!
+  %h1   Welcome to user!!
   - if current_user
     = link_to 'Sign out', destroy_user_session_path, class: 'btn btn-large', method: :delete
     .row-fluid.marketing
@@ -10,11 +10,37 @@
         %strong Last Name:
         = current_user.last_name
       %p
-        %strong Web Site:
-        = current_user.website
+        %strong Gender:
+        =current_user.gender
+      %p
+        %strong Birthdate:
+        =current_user.birthdate
       %p
         %strong Email:
         = current_user.email
+      %p
+        %strong Website:
+        = current_user.website
+      %p
+        %strong Blog:
+        = current_user.blog_address
+      %p
+        %strong Github:
+        = current_user.github_account
+      %p
+        %strong Bitbucket:
+        = current_user.bitbucket_account
+      %p
+        %strong Stackoverflow:
+        = current_user.stackoverflow_account
+      %p
+        %strong Twitter:
+        = current_user.twitter_account
+      %p
+        %strong Bio:
+        = current_user.bio
+
+
   - else
     = link_to 'Sign up today', new_user_registration_path, class: 'btn btn-large btn-success'
     = link_to 'Sign in', new_user_session_path, class: 'btn btn-large'

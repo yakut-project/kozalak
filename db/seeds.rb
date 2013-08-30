@@ -5,7 +5,7 @@ Admin.new( :email => 'admin1@kozalak.com', :password => '12345678',
   Teacher.new( :email => "teacher#{i}@kozalak.com", :password => '12345678',
                :password_confirmation => '12345678').save
 end
-
+  #TODO birthdate needs to be fixed
 30.times do |i|
   User.new( :first_name => "user_first_name#{i}",
             :last_name => "user_last_name#{i}",

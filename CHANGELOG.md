@@ -1,5 +1,12 @@
 
 #### [Current]
+ * [e880069](../../commit/e880069) [#35](../../issues/35) simple form wrapper __(Halit Alptekin)__
+ * [82e1038](../../commit/82e1038) [#30](../../issues/30) teacher controllers __(Halit Alptekin)__
+ * [2a1da47](../../commit/2a1da47) [#30](../../issues/30) little form changes __(Halit Alptekin)__
+ * [877d7ed](../../commit/877d7ed) [#30](../../issues/30) little form changes __(Halit Alptekin)__
+ * [4270540](../../commit/4270540) [#30](../../issues/30) permitted parameters __(Halit Alptekin)__
+ * [5816abb](../../commit/5816abb) [#25](../../issues/25) fix home and routes button __(Bilgehan Varli)__
+ * [d60a93f](../../commit/d60a93f) [#28](../../issues/28) sign out problem & database fetch data fix __(Halit Alptekin)__
  * [c85a349](../../commit/c85a349) [#27](../../issues/27) fixed new user attributes __(Bilgehan Varli)__
  * [9bb63c1](../../commit/9bb63c1) [#28](../../issues/28) 0.3.0 Database Seed __(Bahadir Mezgil)__
  * [5aacf23](../../commit/5aacf23) [#26](../../issues/26) hierapolis panel __(Halit Alptekin)__
