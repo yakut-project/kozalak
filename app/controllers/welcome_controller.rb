@@ -7,7 +7,6 @@ class WelcomeController < ApplicationController
   end
 
   def teachers
-    @users = User.all
-
+    @users= User.all
   end
 end

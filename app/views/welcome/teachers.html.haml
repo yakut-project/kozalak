@@ -1,34 +1,36 @@
-.jumbotron
-  %h1 Welcome to teacher!!!!
-  - if current_teacher
-    = link_to 'Sign out', destroy_teacher_session_path, class: 'btn btn-large', method: :delete
-    .row-fluid.marketing
-      %p
-        %strong Email:
-        = current_teacher.email
+%h1 Welcome #{current_teacher.email}
+
+- if current_teacher
+  .panel-body.no-padding
+    .table-header.row
+      .col-lg-9
+      .col-lg-3
+        .input-group
+          %input.form-control{placeholder: 'Quick search...', type: 'text'}/
+          %span.input-group-btn
+            %button.btn{type: 'button'}
+              %i.icon-search
+
       %table.table
         %thead
           %tr
             %th #
             %th First Name
             %th Last Name
-            %th Username
+            %th Email
             %th.actions
               Actions
-
         %tbody
           - @users.each do |user|
             %tr.success
               %td= user.id
               %td= user.first_name
               %td= user.last_name
-              %td= user.website
+              %td= user.email
               %td.action
-                %a.btn.btn-success{href: '#', data: {toggle: 'tooltip'}, title: 'Zoom'}
-                  %i.icon-zoom-in
                 %a.btn.btn-info{href: '#'}
                   %i.icon-edit
                 %a.btn.btn-danger{href: '#'}
                   %i.icon-trash
-  - else
-    = link_to 'Sign in', new_teacher_session_path, class: 'btn btn-large'
+- else
+  = link_to 'Sign in', new_teacher_session_path, class: 'btn btn-large'

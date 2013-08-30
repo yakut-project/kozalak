@@ -20,13 +20,18 @@ class ApplicationController < ActionController::Base
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:username, :email) }
-    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:first_name, :last_name, :email,
+    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:first_name, :last_name, :email, :twitter_account,
+                                                            :birthdate, :github_account, :gender, :blog_address,
+                                                            :stackoverflow_account, :bitbucket_account, :bio,
                                                             :website, :password, :password_confirmation) }
     devise_parameter_sanitizer.for(:account_update) {|u| u.permit(:first_name, :email, :password,
-                                                                  :password_confirmation, :current_password)}
+                                                                  :password_confirmation, :current_password,:gender,
+                                                                  :twitter_account,:gitbucket_account,
+                                                                  :bitbucket_account,:stackoverflow_account,
+                                                                  :blog_address,:birthdate,:bio)}
   end
 
-  layout :layouter
+  layout :layouter                          #32 add displaying fields to user welcome page
 
   def layouter
     l = 'application'
