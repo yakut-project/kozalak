@@ -1,10 +1,17 @@
 
 #### [Current]
+ * [b09dd56](../../commit/b09dd56) [#20](../../issues/20) teacher layout and partials __(Halit Alptekin)__
+ * [f19be3b](../../commit/f19be3b) [#20](../../issues/20) teacher layout and partials __(Halit Alptekin)__
+ * [b7f9b6c](../../commit/b7f9b6c) [#33](../../issues/33) user sign up, update profile __(Halit Alptekin)__
+ * [7cf2de0](../../commit/7cf2de0) [#33](../../issues/33) [#37](../../issues/37) Update teacher and sign up forms __(Arman Kara)__
+ * [60e1b2d](../../commit/60e1b2d) [#40](../../issues/40) user registration form __(gizem)__
  * [c1c05b5](../../commit/c1c05b5) [#34](../../issues/34) user edit page updated __(Bilgehan Varli)__
  * [3078845](../../commit/3078845) [#32](../../issues/32) add displaying fields to user welcome page __(Bilgehan Varli)__
  * [e113885](../../commit/e113885) Merge remote-tracking branch 'origin/develop' into develop __(Halit Alptekin)__
  * [2f10957](../../commit/2f10957) [#6](../../issues/6) admin login page __(Halit Alptekin)__
  * [ad411d3](../../commit/ad411d3) [#32](../../issues/32) add displaying fields to user welcome page __(Bilgehan Varli)__
+ * [dd54451](../../commit/dd54451) update teachers button and page __(Arman Kara)__
+ * [d1b5adc](../../commit/d1b5adc) update teachers button and page __(Arman Kara)__
  * [37a8303](../../commit/37a8303) [#34](../../issues/34) user profile update form __(Halit Alptekin)__
  * [e880069](../../commit/e880069) [#35](../../issues/35) simple form wrapper __(Halit Alptekin)__
  * [82e1038](../../commit/82e1038) [#30](../../issues/30) teacher controllers __(Halit Alptekin)__
@@ -37,20 +44,16 @@
  * [d039022](../../commit/d039022) [#21](../../issues/21) old views remove __(Halit Alptekin)__
  * [bb72109](../../commit/bb72109) [#21](../../issues/21) old views __(Halit Alptekin)__
  * [aa3ff62](../../commit/aa3ff62) Update README.md __(gizemiskender)__
-
-#### 0.1.2
  * [0902682](../../commit/0902682) version bump __(Halit Alptekin)__
  * [001f5e2](../../commit/001f5e2) new file __(Halit Alptekin)__
- * [d0a95c9](../../commit/d0a95c9) [#19](../../issues/19) Fix Render __(Arman Kara)__
- * [ed16b08](../../commit/ed16b08) [#19](../../issues/19) Create header,footer,navmenu,navbar __(Arman Kara)__
- * [9785b1f](../../commit/9785b1f) [#19](../../issues/19) Create header,footer,navmenu,navbar __(Arman Kara)__
-
-#### 0.1.1
  * [9838a1e](../../commit/9838a1e) [#21](../../issues/21) remove old migration __(Halit Alptekin)__
  * [5470e1b](../../commit/5470e1b) [#21](../../issues/21) add teacher model __(Halit Alptekin)__
  * [93b79ec](../../commit/93b79ec) [#21](../../issues/21) readme rdoc remove __(Halit Alptekin)__
  * [462e693](../../commit/462e693) [#21](../../issues/21) new teacher model __(Halit Alptekin)__
  * [5e95d93](../../commit/5e95d93) [#21](../../issues/21) cybele add __(Halit Alptekin)__
+ * [d0a95c9](../../commit/d0a95c9) [#19](../../issues/19) Fix Render __(Arman Kara)__
+ * [ed16b08](../../commit/ed16b08) [#19](../../issues/19) Create header,footer,navmenu,navbar __(Arman Kara)__
+ * [9785b1f](../../commit/9785b1f) [#19](../../issues/19) Create header,footer,navmenu,navbar __(Arman Kara)__
 
 #### 0.1.0
  * [b9fdfda](../../commit/b9fdfda) version bump __(Halit Alptekin)__

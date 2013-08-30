@@ -14,7 +14,7 @@
     = f.input :email, :required => true
     = f.input :password, :required => true
     = f.input :password_confirmation, :required => true
-    = f.input :birthdate
+    = f.text_field :birthdate, :id => "datepicker", :value => Date.today
     = f.input :github_account
     = f.input :gender
     = f.input :stackoverflow_account

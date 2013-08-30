@@ -1,7 +1,10 @@
 #= require bootstrap
 #= require_tree
+#= require bootstrap-datepicker
 
 $(document).ready ->
+
+  $('#datepicker').datepicker({format: 'yyyy-mm-dd'})
 
   # Enable Tips & Popovers
   $('[data-toggle=tooltip]').tooltip()
