@@ -1,0 +1,74 @@
+%div.pull-right
+  = link_to "Back", :back, class: 'btn btn-mini btn-success'
+%br
+.row
+  .col-lg-12
+    .brand.text-center
+      %h1
+        .logo-icon
+          %i.icon-user
+        User Profile
+#accordion1.accordion
+  .accordion-group
+    .accordion-heading
+      %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseOne", :class => 'btn btn-large btn-info btn-block '}
+        Personal
+    #collapseOne.accordion-body.collapse.in
+      .accordion-inner
+        %br
+        %strong
+          First Name:
+        =@user.first_name
+        %br
+        %strong
+          Last Name:
+        =@user.last_name
+
+%br
+
+#accordion2.accordion
+  .accordion-group
+    .accordion-heading
+      %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseTwo", :class => 'btn btn-large btn-warning btn-block'}
+        Profile
+    #collapseTwo.accordion-body.collapse.in
+      .accordion-inner
+        %br
+        %strong
+          Website:
+        =@user.website
+        %br
+        %strong
+          Github Account:
+        =@user.github_account
+        %br
+        %strong
+          Gender
+        =@user.gender_txt
+        %br
+        %strong
+          Stackoverflow Account
+        =@user.stackoverflow_account
+        %br
+        %strong
+          Bitbucket Account
+        =@user.bitbucket_account
+        %br
+        %strong
+          Blog
+        =@user.blog_address
+        %br
+        %strong
+          Twitter
+        =@user.twitter_account
+%br
+#accordion3.accordion
+  .accordion-group
+    .accordion-heading
+      %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseThree", :class => 'btn btn-large btn-success btn-block'}
+        Bio
+    #collapseThree.accordion-body.collapse.in
+      .accordion-inner
+        %br
+        %p= @user.bio
+

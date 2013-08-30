@@ -1,0 +1,17 @@
+.row
+  .col-lg-12
+    .brand.text-center
+      %h1
+        .logo-icon
+          %i.icon-user
+        User
+- if current_user
+  = link_to 'Go to Profile', current_user, class: 'btn btn-block btn-large btn-warning'
+  %br
+  = link_to 'Edit Profile',  edit_user_registration_path, class: 'btn btn-block btn-large btn-success'
+  %br
+  = link_to 'Sign out', destroy_user_session_path, class: 'btn btn-block btn-success', method: :delete
+
+- else
+  = link_to 'Sign up today', new_user_registration_path, class: 'btn btn-large btn-success'
+  = link_to 'Sign in', new_user_session_path, class: 'btn btn-large'

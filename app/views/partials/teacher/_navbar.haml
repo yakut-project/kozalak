@@ -1,0 +1,13 @@
+#navbar.navbar
+  %a.navbar-brand{:href => '#'}
+    %i.icon-beer
+    Kozalak | Teacher Panel
+  %ul.nav.navbar-nav.pull-right
+    %li.dropdown.user
+      %a.dropdown-toggle{'data-toggle' => 'dropdown', :href => '#'}
+        %i.icon-user
+        %strong= current_teacher.email
+        %b.caret
+      %ul.dropdown-menu
+        %li
+          =link_to 'Sign out', destroy_teacher_session_path

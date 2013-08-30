@@ -1,0 +1,24 @@
+- content_for :title do
+  Welcome Page
+.row
+  .col-lg-12
+    .brand.text-center
+      %h1
+        .logo-icon
+          %i.icon-group
+        Kozalak
+- if current_user || current_teacher
+  = link_to 'Sign out', destroy_teacher_session_path, class: 'btn btn-block btn-success', method: :delete
+-else
+  .row
+    .col-lg-12
+      %form
+        %fieldset.text-center
+          %legend
+          = link_to 'User Sign up', new_user_registration_path, class: 'btn btn-block btn-large btn-success'
+        %fieldset.text-center
+          %br/
+          = link_to 'User Sign in', new_user_session_path, class: 'btn btn-block btn-large btn-success'
+        %fieldset.text-center
+          %br/
+          = link_to 'Teacher Sign in', new_teacher_session_path, class: 'btn btn-block btn-large btn-warning'

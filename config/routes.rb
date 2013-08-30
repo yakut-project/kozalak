@@ -1,4 +1,21 @@
 Kozalak::Application.routes.draw do
+  devise_for :teachers
+  devise_for :admins, controllers: {sessions: 'hq/sessions'}, path: 'hq',
+             path_names: {sign_in: 'login', sign_out: 'logout', password: 'secret',
+                          confirmation: 'verification'}
+  devise_for :users
+  resources :users
+  root to: 'welcome#index'
+  get 'user/welcome' => 'welcome#users'
+  get 'teachers/welcome' => 'welcome#teachers'
+  namespace :hq do
+      resources :dashboard, only: [:index] do
+        get 'teachers', on: :collection
+        get 'users', on: :collection
+        get 'profile', on: :collection
+      end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
