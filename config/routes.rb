@@ -8,7 +8,11 @@ Kozalak::Application.routes.draw do
   get 'users/welcome' => 'welcome#users'
   get 'teachers/welcome' => 'welcome#teachers'
   namespace :hq do
-      resources :dashboard, only: [:index]
+      resources :dashboard, only: [:index] do
+        get 'teachers', on: :collection
+        get 'users', on: :collection
+        get 'profile', on: :collection
+      end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
