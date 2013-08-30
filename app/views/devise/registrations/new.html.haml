@@ -11,7 +11,7 @@
   #accordion2.accordion
     .accordion-group
       .accordion-heading
-        %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseOne"}
+        %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseOne", :class => 'btn btn-large btn-info btn-block'}
           Required Fields
       #collapseOne.accordion-body.collapse.in
         .accordion-inner
@@ -21,14 +21,15 @@
             = f.input :email, :required => true
             = f.input :password, :required => true
             = f.input :password_confirmation, :required => true
+    %br
     .accordion-group
       .accordion-heading
-        %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseTwo"}
+        %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseTwo", :class => 'btn btn-large btn-info btn-block'}
           Profile Fields
       #collapseTwo.accordion-body.collapse
         .accordion-inner
           .forms-inputs
-            = f.text_field :birthdate, :id => "datepicker", :value => Date.today
+            = f.input :birthdate, :value => Date.today
             = f.input :github_account
             = f.input :gender
             = f.input :stackoverflow_account
@@ -36,9 +37,10 @@
             = f.input :blog_address
             = f.input :twitter_account
             = f.input :website
+    %br
     .accordion-group
       .accordion-heading
-        %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseThree"}
+        %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseThree", :class => 'btn btn-large btn-info btn-block'}
           Biography
       #collapseThree.accordion-body.collapse
         .accordion-inner
