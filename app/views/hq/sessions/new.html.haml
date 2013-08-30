@@ -1,8 +1,23 @@
-%h2 Admin Sign in
 = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
-  .form-inputs
-    = f.input :email, :required => false, :autofocus => true
-    = f.input :password, :required => false
-    = f.input :remember_me, :as => :boolean if devise_mapping.rememberable?
-  .form-actions
-    = f.button :submit, "Sign in"
+  .row
+    .col-lg-12
+      .brand.text-center
+        %h1
+          .logo-icon
+            %i.icon-beer
+          Kozalak Admin
+  .row
+    .col-lg-12
+      %form
+        %fieldset.text-center
+          %legend=t(:Login)
+          .form-group
+            = f.input :email, :required => false, :autofocus => true
+          .form-group
+            = f.input :password, :required => false
+          .text-center
+            .checkbox
+              %label
+                = f.input :remember_me, :as => :boolean if devise_mapping.rememberable?
+            .form-actions
+              = f.button :submit, 'Sign in'
