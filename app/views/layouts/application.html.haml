@@ -27,8 +27,13 @@
 
     %body.login
 
-
     .wrapper
+      - if alert
+        %div.alert.alert-danger
+          =alert
+      - if notice
+        %div.alert.alert-info
+          =notice
       = yield
 
     / Footer
